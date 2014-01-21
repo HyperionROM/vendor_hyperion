@@ -4,6 +4,8 @@
 # cyanogen
 #
 
+. $ANDROID_BUILD_TOP/vendor/hyperion/tools/colors
+
 OUT_TARGET_HOST=`uname -a | grep Darwin`
 if [ -z "$OUT_TARGET_HOST" ]
 then
@@ -192,9 +194,22 @@ echo
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
+ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}' `
 echo
-echo "Package complete: $OUTFILE"
-cat $img.md5sum
+echo $CL_BLU"    __  __"$CL_RST
+echo $CL_BLU"   / / / /_  ______  ___  _____ _ ___  ____"$CL_RST
+echo $CL_BLU"  / /_/ / / / / __ \/ _ \/ ___/ / __ \/ __ \ "$CL_RST
+echo $CL_BLU" / __  / /_/ / /_/ /  __/ /  / / /_/ / / / /"$CL_RST
+echo $CL_BLU"/_/ /_/\__, / .___/\___/_/  /_/\____/_/ /_/"$CL_RST
+echo $CL_BLU"      /____/_/   "$CL_RST $CL_MAG"KitKat - v1.0"$CL_RST
+echo
+echo
+echo $CL_BLU"============="$CL_RST$CL_MAG"-Package complete-"$CL_BLU"=============="$CL_RST
+echo $CL_BLU"zip:"$CL_MAG" $OUTFILE"$CL_RST
+echo $CL_BLU"md5:"$CL_MAG" $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
+echo $CL_BLU"size:"$CL_MAG" $ZIPSIZE"$CL_RST
+echo $CL_BLU"============================================="$CL_RST
+echo
 echo
 )
 
