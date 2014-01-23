@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
 
 # HYPERION-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/hyperion/prebuilt/common/etc/init.local.rc:root/init.hyperion.rc
+    vendor/hyperion/prebuilt/common/etc/init.hyperion.rc:root/init.hyperion.rc
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
