@@ -87,7 +87,8 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     DashClock \
-    LockClock
+    LockClock \
+    PerformanceControl
 
 # Extra tools
 PRODUCT_PACKAGES += \
