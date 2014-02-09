@@ -88,8 +88,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     DashClock \
     LockClock \
-    PerformanceControl\
-    OmniSwitch
+    PerformanceControl
 
 # Extra tools
 PRODUCT_PACKAGES += \
