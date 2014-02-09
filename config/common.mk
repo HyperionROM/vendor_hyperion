@@ -52,9 +52,9 @@ PRODUCT_COPY_FILES += \
     vendor/hyperion/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/hyperion/prebuilt/common/bin/sysinit:system/bin/sysinit
 
-# Workaround for NovaLauncher zipalign fails
 PRODUCT_COPY_FILES += \
-    vendor/hyperion/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
+    vendor/hyperion/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk \
+    vendor/hyperion/prebuilt/common/app/ESFileExplorer.apk:system/app/ESFileExplorer.apk
 
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
