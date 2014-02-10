@@ -63,6 +63,7 @@ SUPERUSER_EMBEDDED := true
 PRODUCT_PACKAGES += \
     Camera \
     Development \
+    SlimFileManager \
     SpareParts \
     Superuser \
     su
