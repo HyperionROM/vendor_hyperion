@@ -54,7 +54,8 @@ PRODUCT_COPY_FILES += \
 
 # Workaround for NovaLauncher zipalign fails
 PRODUCT_COPY_FILES += \
-    vendor/hyperion/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
+    vendor/hyperion/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk \
+    vendor/hyperion/prebuilt/common/app/QuickPic.apk:system/app/QuickPic.apk
 
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
