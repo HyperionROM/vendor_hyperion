@@ -1,5 +1,4 @@
 add_lunch_combo hyperion_d2lte-userdebug
-add_lunch_combo hyperion_d2vzw-userdebug
 add_lunch_combo hyperion_jflte-userdebug
 add_lunch_combo hyperion_i605-userdebug
 add_lunch_combo hyperion_vanquish-userdebug
