@@ -101,6 +101,9 @@ PRODUCT_PACKAGES += \
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
+# Theme Manager
+include vendor/hyperion/config/themes.mk
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/hyperion/overlay/common
 
 # Boot animation include
